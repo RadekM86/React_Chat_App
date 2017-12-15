@@ -1,0 +1,136 @@
+html {
+  font-size: 12px; }
+
+body {
+  background-color: #FAFAFA;
+  margin: 0;
+ }
+  @media (min-width: 380px) {
+    body {
+      background-color: #FAFAFA; }
+     } }
+  @media (min-width: 600px) {
+    body {
+      background-color: #FAFAFA; } }
+  @media (min-width: 1200px) {
+    body {
+      background-color: #FAFAFA; }
+    }
+    @media (max-width: 400px) {
+      .logo {
+        height: 0 }
+       } 
+
+* {
+  box-sizing: border-box; }
+
+h1{
+  font-family: Sacramento, serif;
+  font-size: 30px;
+}
+
+b{
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left
+
+}
+
+.input{
+  position: fixed;
+  bottom: 10px;
+}
+.input input{
+  height: 40px;
+  width: 80vw;
+  margin: 30px
+}
+.login{
+  height: 50vh;
+  display: flex;
+  wrap: no-wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center
+}
+@keyframes blush {
+  0% { fill: #ffb3ba ;transform: translateY(-5px)}
+  60% { fill: #FFb3ba; transform: translateY(-10px) }
+  100% { fill: #FAFAFA; transform: translateY(0px)}
+}
+@keyframes puff {
+  from {opacity: 0.5;  transform: scale(0.95)};
+  to {opacity: 1;  transform: scale(1)}
+}
+@keyframes smile{
+  from{transform: translateY(-5px)};
+  to{transform: translateY(0px)}
+}
+.blush{
+  animation-name: blush;
+  animation-duration: 1s;
+}
+.mouth{
+  animation-name: smile;
+  animation-duration: 1s;
+}
+.wrapper{
+  position: fixed;
+  height: 50vh;
+  overflow-y: scroll;
+}
+.msg {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Roboto, Arial, sans-serif;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column-reverse
+
+}
+.logo{
+  margin: 20px auto;
+  overflow: hidden
+}
+
+.msg-piece{
+  display: block;
+  max-width: 300px;
+  background-color:#ffb3ba;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 5px;
+  animation-name: puff;
+  animation-duration: 0.2s;
+
+}
+.right{
+  background-color: #bae1ff;
+  margin-left: 100px;
+  border-radius: 20px 0 20px 20px;
+  right: 20px;
+}
+.left{
+  background-color:#ffb3ba;
+  margin-right: 100px;
+  border-radius: 0 20px 20px 20px;
+  left: 20px;
+  align-self: flex-start
+
+}
+.avatar{
+  background-size: contain;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   margin: 5px;
+   
+}
+.avatar:hover{
+  border: 3px solid #BBB;
+}
+.user{
+  align-self: flex-end;
+}
