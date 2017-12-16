@@ -42,13 +42,13 @@ b{
 }
 .input input{
   height: 40px;
-  width: 80vw;
-  margin: 30px
+  width: 50vw;
+  margin: 10px auto;
 }
 .login{
   height: 50vh;
   display: flex;
-  wrap: no-wrap;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center
@@ -75,18 +75,18 @@ b{
   animation-duration: 1s;
 }
 .wrapper{
-  position: fixed;
+  width: 50vw;
   height: 50vh;
   overflow-y: scroll;
+  margin: 0 auto;
 }
 .msg {
-  width: 90vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   font-family: Roboto, Arial, sans-serif;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-direction: column-reverse
 
 }
